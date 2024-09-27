@@ -1,5 +1,6 @@
 .body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 2%;
 }
 
 
@@ -9,20 +10,36 @@
     gap: 20px;
     background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 2%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   
-  .grid-container > div {
-    background-color: rgba(138, 87, 168, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    grid-row: span 10;
-    border-radius: 2%;
-  }
+.grid-container > div {
+  background-color: rgba(0,212,255, 0.1);
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: aliceblue;
+  text-align: center;
+  font-family: "Playwrite US Trad", cursive;
+  font-weight: 400;
+}
 
+.grid-container > div:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
 
-  .page-header {
-    border: 1rem;
-    border-color: black;
-    padding: 1%;
-  }
+.page-header {
+  margin: auto;
+  width: auto;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: rgba(98,9,121, .5);
+}
+
+.header-text {
+  text-align: center;
+  font-family: "Playwrite US Trad", cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
