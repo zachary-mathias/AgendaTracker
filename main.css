@@ -1,12 +1,15 @@
 .body {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 50%);
     margin: 2%;
 }
 
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+      "item1 item1 item1"
+      "item2 item2 item3"
+      "item3 item3 item3";
     gap: 20px;
     background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 2%;
@@ -26,20 +29,50 @@
 }
 
 .grid-container > div:hover {
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(37, 36, 36);
 }
 
 .page-header {
   margin: auto;
   width: auto;
-  border: 1px solid white;
+  border: 2px solid white ;
+  border-radius: 10px;
   padding: 10px;
-  background-color: rgba(98,9,121, .5);
+  background-color: linear-gradient(90deg, rgba(0,212,255,1) 100%, rgba(98,9,121,1) 35%, black);
 }
 
 .header-text {
-  text-align: center;
+  text-align: left;
   font-family: "Playwrite US Trad", cursive;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
+
+.grid-container2 {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+  border-radius: 10px;
+  padding: 10px;
+  color: aliceblue;
+  background: linear-gradient(rgb(1,1,1,.5), rgb(255,255,255, 0));
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.grid-container2 > .top {
+  grid-area: top;
+}
+
+.grid-container2 > .middle {
+  grid-area: middle;
+}
+
+.grid-container2 > .bottom {
+  grid-area: bottom;
+}
+
+
