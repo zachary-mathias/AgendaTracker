@@ -1,6 +1,5 @@
 .body {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 50%);
-    margin: 2%;
+    background: linear-gradient(90deg, rgb(0,0,0,1) 100%, rgb(255,255,255,1) 100%);
 }
 
 
@@ -17,25 +16,26 @@
   }
   
 .grid-container > div {
-  background-color: rgba(0,212,255, 0.1);
+  background-color: rgba(255, 255, 255, 0.048);
   text-align: center;
   padding: 20px 0;
   border: 1px solid white;
   border-radius: 10px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Playwrite US Trad", cursive;
   font-weight: 400;
 }
 
 .grid-container > div:hover {
-  box-shadow: 0 0 10px rgb(37, 36, 36);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  opacity: .5;
 }
 
 .page-header {
   margin: auto;
   width: auto;
-  border: 2px solid white ;
+  border: 1px solid white ;
   border-radius: 10px;
   padding: 10px;
   background-color: linear-gradient(90deg, rgba(0,212,255,1) 100%, rgba(98,9,121,1) 35%, black);
@@ -52,14 +52,11 @@
   display: grid;
   width: 100%;
   grid-template-areas:
-    "top"
-    "middle"
-    "bottom";
+    "top top top top"
+    "middle middle middle middle"
+    "bottom bottom bottom bottom";
   border-radius: 10px;
-  padding: 10px;
   color: aliceblue;
-  background: linear-gradient(rgb(1,1,1,.5), rgb(255,255,255, 0));
-  margin: 10px 10px 10px 10px;
   text-align: center;
 }
 
@@ -75,4 +72,7 @@
   grid-area: bottom;
 }
 
-
+.section2 {
+  background: linear-gradient(black, white);
+  width: 100%;
+}
