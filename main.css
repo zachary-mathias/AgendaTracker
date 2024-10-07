@@ -11,7 +11,7 @@
       "item2 item2 item2"
       "item3 item3 item3";
     gap: 20px;
-    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     padding: 2%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -24,7 +24,7 @@
   border-radius: 10px;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: "Playwrite US Trad", cursive;
+  font-family: "Playwrite US Trad";
   font-weight: 300;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(60px);
@@ -35,19 +35,20 @@
 }
 
 .grid-container > div:hover {
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 10px #c966c9;
 }
 
 .page-header {
   margin: auto;
   width: auto;
   border-radius: 10px;
-  padding: 10px;
-  background-color: linear-gradient(90deg, rgba(0,212,255,1) 100%, rgba(98,9,121,1) 35%, black);
+  font-size: x-large;
+  
 }
 
 .header-text {
   position: relative;
+  margin-left: 25vw;
   text-align: left;
   font-family: "Playwrite US Trad", cursive;
   font-weight: 400;
@@ -66,6 +67,9 @@
   border-radius: 10px;
   color: aliceblue;
   text-align: center;
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .grid-container2 > .top {
@@ -119,5 +123,4 @@ br {
 
 .bi {
   color:#c966c9;
-  opacity: .6;
 }
