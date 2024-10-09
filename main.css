@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .body {
   background: rgb(201,174,238);
   background: radial-gradient(circle, rgba(201,174,238,1) 0%, rgba(148,221,233,1) 100%);
@@ -11,7 +15,6 @@
       "item2 item2 item2"
       "item3 item3 item3";
     gap: 20px;
-    /* background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     padding: 2%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -36,6 +39,7 @@
 
 .grid-container > div:hover {
   box-shadow: 0 0 10px #c966c9;
+  transform: translateY(-10px);
 }
 
 .page-header {
@@ -55,6 +59,9 @@
   font-weight: bolder;
   color: #ff00ff;
   opacity: .25;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: black;
+  
 }
 
 .grid-container2 {
@@ -92,27 +99,29 @@
   --grid-auto-fit-min-column-size: 150px;
   display: grid;
   place-items: center;
-  gap: 1rem;
+  gap: .5rem;
   grid-template-columns: repeat(
     auto-fit,
     minmax(min(var(--grid-auto-fit-min-column-size), 100%), 1fr));
-  width: 98vw;
+  width: 100vw;
 }
 
 img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 30px;
+  display: block;
 }
 
 img:hover {
   box-shadow: 1px 1px 10px 10px  rgb(173, 112, 201, .4);
   transition: box-shadow 0.3s ease;
+  transform: scale(1.5) translate(-10%);
 }
 
 br {
-  border-bottom:1px solid rgb(173, 112, 201, .2);
+    border-bottom:1px solid rgba(198, 129, 230, 0.438);
     content: "";
     display: block;
 }
@@ -123,4 +132,65 @@ br {
 
 .bi {
   color:#c966c9;
+}
+
+.bubble-container {
+  position: absolute;
+  top: 10px; /* Position close to the top */
+  left: 10px; /* Position close to the left side */
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Space between the bubbles */
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(199, 140, 226, 0.705);
+  border-radius: 50%;
+}
+
+.large-bubble {
+  width: 45px;
+  height: 45px;
+}
+
+.medium-bubble {
+  width: 30px;
+  height: 30px;
+}
+
+.small-bubble {
+  width: 10px;
+  height: 10px;
+}
+
+.bubble-container2 {
+  position: absolute;
+  top: 10px; /* Position close to the top */
+  right: 10px; /* Position close to the left side */
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  gap: 18px; /* Space between the bubbles */
+}
+
+.bubble2 {
+  background-color: rgba(199, 140, 226, 0.705);
+  border-radius: 50%;
+}
+
+.large-bubble2 {
+  width: 45px;
+  height: 45px;
+}
+
+.medium-bubble2 {
+  width: 30px;
+  height: 30px;
+}
+
+.small-bubble2 {
+  width: 10px;
+  height: 10px;
 }
